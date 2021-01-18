@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<style>
+
+.ad{
+  background-color: blue;
+  width: 300px;
+  border: 15px solid blue;
+  padding: 20px;
+  float:left;
+  margin-left:40px;
+font-weight:bold;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.ft {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#id
+{
+float:right;
+}
+a:hover {
+  color:white ;
+}
+.adt
+{
+color:white;
+font-family: "Lucida Console", Courier, monospace;
+font-size:20px;
+}
+li a:hover{
+background-color:brown;
+color:white;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <a class="navbar-brand" href="#">FOODHUB</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.jsp">Home <span class="sr-only">(current)</span></a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+      </li>
+     
+    </ul>
+   
+</div>
+</nav>
+<br>
+
+<center><h3>Place Order</h3></center>
+
+<div class="ft">
+  <form action="enter_order.jsp">
+      <label for="name"> Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+     <label for=email">Email id</label>
+    <input type="text" id="email" name="email" placeholder="Your email id..">
+    <label for="starter">Starters</label>
+    <select id="starter" name="starter">
+        <option>Pick a choice</option>
+       <option value="spring rolls">Baked Spring Rolls</option>
+      <option value="bacon rings">Bacon Rings</option>
+      <option value="gobi manchuria">Gobi Manchuria</option>
+      <option value="masala chaas">masala chaas</option>
+     <option value="tomato soup">Tomato soup</option>
+     <option value="chickenm ajestic">Chicken Majestic</option>
+     <option value="cheese balls">cheese balls</option>
+     <option value="panir tikka">panir tikka</option>
+     <option value="fish fingers">fish fingers</option>
+       <option value="no need">No need</option>
+    </select>
+
+    <label for="maincourse">Main Course</label>
+    <select id="maincourse" name="maincourse">
+       <option>Pick a choice</option>
+       <option value="kadai paneer">Kadai Paneer</option>
+      <option value="vegetable fried rice">Vegetable Fried Rice</option>
+      <option value="chicken dum biryani">Chicken Dum Biryani</option>
+      <option value="butternaan with veg mixed curry">Butter naan with vegetable mix curry</option>
+      <option value="palak paneer">Palak Paneer</option>
+      <option value="chicken tikki masala">Chicken Tikki Masala</option>
+      <option value="aloo matar curry">Aloo Matar Curry</option>
+      <option value="brinjal curry">Brinjal Curry</option>
+      <option value="chana masala curry">Chana Masala Curry</option>
+      <option value="chicken tikki masala">Chicken tikki masala</option>
+       <option value="no need">No need</option>
+    </select>
+<label for="dessert">Desserts</label>
+    <select id="dessert" name="dessert">
+      <option>Pick a choice</option>
+      <option value="fried ice cream">Fried Ice Cream</option>
+      <option value="samosa dessert lasanga">Samosa dessert Lasanga</option>
+      <option value="oreo truffles">oreo truffles</option>
+      <option value="vanilla pudding">vanilla pudding</option>
+      <option value="cookie dough ice cream sandwich">Cookie dough ice-cream sandwich</option>
+      <option value="swis roll cake">Swiss Roll Cake</option>
+       <option value="lafthouse cookies">Lafthouse cookies</option>
+        <option value="keto peanut butter">Keto peanut butter</option>
+         <option value="keto taquitoes">Keto Taquitoes</option>
+       <option value="no need">No need</option>
+    </select>
+   <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
